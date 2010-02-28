@@ -1,5 +1,17 @@
 <h1>Listing books</h1>
 
+<% form_for(@books_search_form, :url => books_path, :html => {:method => :get}) do |f| %>
+  <%#= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'search books' %>
+  </div>
+<% end %>
+
 <table>
   <tr>
     <th>Title</th>
