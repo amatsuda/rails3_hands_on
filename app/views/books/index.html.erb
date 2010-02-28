@@ -1,6 +1,6 @@
 <h1>Listing books</h1>
 
-<% form_for(@books_search_form, :url => books_path, :html => {:method => :get}) do |f| %>
+<% form_for(@books_search_form, :url => books_path, :remote => true, :html => {:method => :get}) do |f| %>
   <%#= f.error_messages %>
 
   <div class="field">
