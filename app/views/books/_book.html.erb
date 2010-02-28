@@ -1,0 +1,7 @@
+<tr>
+  <td><%= book.title %></td>
+  <td><%= book.price %></td>
+  <td><%= link_to 'Show', book %></td>
+  <td><%= link_to 'Edit', edit_book_path(book) %></td>
+  <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
